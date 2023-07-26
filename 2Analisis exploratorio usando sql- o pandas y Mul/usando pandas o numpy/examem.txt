@@ -1,0 +1,11 @@
+que tipo de datos represent mejor un grafico de barras?
+Categoricas.
+2-cual es el numero total de columnas en el marco de caracteristicas despues de aplicar una condicion en cliente a las columnas
+80 columnas
+3-el codigo catplot para mostrar el diagrama de dispersion 
+respuesta :
+sns.catplot(y="LaunchSite", x="FlightNumber", hue="Class", data=df, aspect = 5)
+plt.xlabel("Flight Number",fontsize = 20)
+plt.ylabel("Launch Site",fontsize = 20)
+plt.show()
+4-

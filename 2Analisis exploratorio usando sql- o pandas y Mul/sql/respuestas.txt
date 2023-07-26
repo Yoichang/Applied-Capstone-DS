@@ -1,0 +1,29 @@
+pregunta 1
+respuesta :
+%sql SELECT *  from SPACEXTBL LIMIT 2 
+
+pregunta 2
+respuesta
+%sql select min(payload_mass__kg_) from SPACEXTBL 
+
+preguta 3 
+Mostrar la masa total de carga útil transportada por los propulsores lanzados por la NASA (CRS)
+ %sql SELECT  SUM(PAYLOAD_MASS__KG_) FROM SPACEXTBL WHERE Customer =="NASA (CRS)";
+
+respest %sql SELECT sum(PAYLOAD_MASS__KG_) as Total_Payload_Mass from SPACEXTBL 
+
+pregunta 4
+respuest :
+%sql select  count("Mission_Outcome") as MISSION_OUTCOME_COUNT,Launch_Site  from SPACEXTBL group by "Launch_Site";
+
+Enumerar el número total de resultados exitosos y fallidos de la misión
+%sql SELECT Mission_Outcome, COUNT(Mission_Outcome) AS TOTal_Number FROM SPACEXTBL GROUP by Mission_Outcome;
+
+preguta 5 
+Mostrar los nombres de los sitios de lanzamiento únicos en la misión espacial
+Launch_Site
+CCAFS LC-40
+VAFB SLC-4E
+KSC LC-39A
+CCAFS SLC-40
+Ninguno
